@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*_______________________HEADER__________________________*/
+header{
+    display: flex;
+    background-color: orange;
+    height: 80px;
+}
+header img{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+header nav{
+    width: 80%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: red;
+}
+/* nav ul li a:visited {
+    color: rgb(164, 8, 8);
+} */
+/*_______________________MAIN__________________________*/
+/*_______________________BANNIERE__________________________*/
+.banniere{
+    position: relative;
+    text-align: center;
+}
+.banniere img{
+    width: 100vw;/*taille d'écran*/
+    height: 75vh;/*hauteur de l'écran*/
+}
+.elementsup{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+    color: orange;
+    text-shadow: 1px 2px 3px black;
+    -webkit-text-stroke: 1px blue; /*contour du texte*/
+}
+h1 span{
+    font-size: 30px;
+    font-weight: lighter;
+    color: blue;
+    /* -webkit-text-stroke: 1px orange; */
+}
+.btn{
+    background-color: orange;
+    color: blue;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid red;  /*bordure de l'élément*/
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+    color: orange;
+}
+/*_______________________QSN__________________________*/
+.qsn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.qsn .gauche,.qsn .droite{
+    width: 45%;
+    text-align: center;
+}
+.gauche img,
+.milieu img,
+.droite img{
+    width: 100%;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px black; /*contour de l'element*/
+}
+h2{
+    font-size: 2.5em;
+    color: orange;
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 40px 0; /*margin sur l'axe y et sur l'axe x*/
+}
+h3{
+    font-size: 1.8em;
+    color: blue;
+    -webkit-text-stroke: 1px orange;
+    text-align: left;
+    padding: 10px;
+}
+/*_______________________SERVICES__________________________*/
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.services .gauche,
+.services .milieu,
+.services .droite{
+    width: 30%;
+    text-align: center;
+}
+h4{
+    font-size: 1.2em;
+    color: blue;
+}
+.services .gauche:hover,
+.services .milieu:hover,
+.services .droite:hover{
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 20px 0;
+    transition: 0.2s;
+}
+.gauche img:hover,
+.milieu img:hover,
+.droite img:hover{
+    box-shadow: 1px 4px 3px 5px orange;
+}
+/*_______________________Blog__________________________*/
+.blog{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.blog .article1,
+.blog .article2,
+.blog .article3{
+    width: 30%;
+    text-align: left;
+    border: 2px solid blue;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.article1 img,
+.article2 img,
+.article3 img{
+    width: 30%;
+    height: 150px;
+    float: left;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+/*_______________________Contact__________________________*/
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.contact .map,
+.contact .formulaire{
+    width: 45%;
+    text-align: center;
+}
+.map iframe{
+    width: 100%;
+    height: 650px;
+    border: 0;
+    border-radius: 50px;
+}
+form{
+    background-color: blue;
+    padding: 50px;
+    border-radius: 50px;
+}
+label{
+    color: orange;
+}
+label span{
+    color: red;
+}
+input, textarea{
+    width: 98%;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.partage{
+    width: 48%;
+}
+.reserve{
+    padding-right: 35%;
+}
+#cgu{
+    width: 10%;
+    height: 20px;
+    float: left;
+}
+.cgu{
+    color: orange;
+    font-size: 1em;
+    float: left;
+}
+.cgu a{
+    color: red;
+    text-decoration: none;
+}
+.cgu a:hover{
+    color: white;
+}
+#submit{
+    width: 20%;
+    padding-bottom: 40px;
+    font-size: 1em;
+}
+form p{
+    color: red;
+    margin-bottom: 20px;
+    text-align: left;
+}
+input:focus{
+    background-color: orange;
+    color: blue;
+}
+/*_______________________FOOTER__________________________*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blue;
+    padding: 50px;
+}
+footer h2{
+    font-size: 1.5em;
+    color: red;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+}
+ul li a {
+    color: orange;
+    font-size: 1em;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: red;
+}
+footer .milieu p{
+    font-size: 1.2em;
+    color: orange;
+    margin-top: 200px;
+}
+/* .gauche, .droite{
+    width: 30%;
+}
+/* .droite{
+    width: 30%;
+} */
+/* .milieu{
+    width: 40%;
+} */ 
+
+/*_______________________Page à propos__________________________*/
+#imgqsn{
+    height: 500px;
+}
+.valeurs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.v1{
+    width: 30%;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.v1 p{
+    text-align: center;
+    color: orange;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 40px;
+}
+/*_______________________Page contact__________________________*/
+#contact{
+    display: block;
+}
+#map{
+    width: 100%;
+}
+#iframe{
+    border-radius: 0;
+    margin-top: -10px;
+    height: 400px;
+}
+#formulaire{
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

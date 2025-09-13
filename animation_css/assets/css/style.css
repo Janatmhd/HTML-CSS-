@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*--------------------header---------------------*/
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(gray, white);
+    border-bottom: 2px solid black;
+    height: 80px;
+}
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 80px;
+}
+.logo a {
+    font-size: 1.8em;
+    color: gold;
+    font-weight: bold;
+}
+.logo a:hover {
+    color: black;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.logo p{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+nav{
+    width: 70%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+nav ul li{
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+}
+header a {
+    font-size: 1.5em;
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 2px 3px black;
+    position: relative;
+}
+header a:hover {
+    color: black;
+}
+header li:hover{
+    background: linear-gradient(gray, white);
+    box-shadow: inset 1px -4px 20px 4px black;
+    transition: 0.5s;
+}
+header li a::after{
+    content: '';
+    height: 7px;
+    width: 0;
+    background-color: gold;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+header li a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.logo p:hover{
+    color: white;
+    text-shadow: 1px 2px 4px black;
+    transform: scale(120%);
+    transition: 0.5s;
+}
+/*--------------------banniere index---------------------*/
+.banniere{
+    height: 80vh;
+    background: linear-gradient(rgba(128, 128, 128, 0.523), rgba(255, 255, 255, 0.413)), url(../images/devweb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h1{
+    font-size: 5em;
+    color: gold;
+    text-shadow: 1px 2px 3px black;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    animation: defilementvertical 2s ease-in-out;
+}
+@keyframes defilementvertical {
+    from {
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.btn{
+    font-size: 1em;
+    color: gold;
+    background-color: gray;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50px;
+}
+.btn:hover{
+    color: black;
+    background-color: gold;
+    animation: janat 2s ease-out;
+}
+@keyframes janat {
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-100px);
+    }
+    40%{
+        transform: translateX(100px);
+    }
+    60%{
+        transform: translateX(-50px);
+    }
+    80%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/*--------------------apropos index---------------------*/
+.apropos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    padding: 40px;
+}
+.apropos .gauche,
+.apropos .droite{
+    width: 45%;
+}
+.gauche img{
+    width: 100%;
+    border-radius: 50px;
+    animation: defilementhorizontal 2s ease-in-out;
+}
+h2{
+    font-size: 3.2em;
+    color: black;
+    text-shadow: 1px 2px 3px gold;
+    padding: 10px;
+    margin: 30px 0;
+    text-align: center;
+    animation: defilementhorizontal 2s ease-in-out;
+}
+@keyframes defilementhorizontal {
+    from{
+        transform: translateX(-900px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+h3{
+    font-size: 2.4em;
+    color: gold;
+    text-shadow: 1px 2px 3px black;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    animation: zoomavant 2s ease-in-out;
+}
+@keyframes zoomavant {
+    from{
+        transform: scale(200%);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+.apropos p{
+    padding-bottom: 20px;
+    animation: defilementdroite 2s ease-in-out;
+}
+@keyframes defilementdroite {
+    from {
+        transform: translateX(900px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.gauche img:hover{
+    transform: scale(120%);
+    box-shadow: 1px 6px 4px 3px gold;
+    transition: 0.5s;
+}
+/*--------------------services index---------------------*/
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service1,
+.service2,
+.service3{
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid gold;
+    width: 30%;
+}
+.services img{
+    width: 100%;
+    height: 250px;
+    border-radius: 50px;
+    border: 2px solid gold;
+}
+h4{
+    background-color: gray;
+    color: gold;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-shadow: 1px 2px 3px black;
+    text-align: center;
+}
+.services p{
+    margin: 10px 30px;
+}
+.services .btn{
+    margin-bottom: 20px;
+}
+.service1{
+    animation: defilementhorizontal 2s ease-in-out;
+}
+.service2{
+    animation: apparution 4s ease-in-out;
+}
+.service3{
+    animation: defilementdroite 2s ease-in-out;
+}
+@keyframes apparution {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*--------------------blog index---------------------*/
+
+/*--------------------partenaires index---------------------*/
+.partenaires{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.partenaires aside{
+    width: 30%;
+    text-align: center;
+}
+.part1 .forme{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    animation: pulsion 1.5s infinite;
+} 
+@keyframes pulsion {
+    from{
+        box-shadow: 0px 0px 0px 0px red;
+    }
+    to{
+        box-shadow: 0px 0px 0px 18px rgba(255, 0, 0, 0.025);
+    }
+}
+.part2 .forme {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: balade 4s alternate;
+    animation-iteration-count: 2;
+    position: relative;
+}
+@keyframes balade {
+    0%{
+        background-color: aqua;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: blue;
+        left: 100px;
+        top: 0;  
+    }
+    50%{
+        background-color: green;
+        left: 100px;
+        top: 100px;  
+    }
+    75%{
+        background-color: yellow;
+        left: 0;
+        top: 100px;  
+    }
+    100%{
+        background-color: aqua;
+        left: 0;
+        top: 0;  
+    }
+}
+.part3 .forme{
+    height: 0;
+    width: 0;
+    /* border: 2px solid red; */
+    border-width: 0 150px 150px 150px;
+    border-style: solid;
+    border-color: transparent transparent gold transparent;
+    animation:  rotation 3s infinite;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+/*--------------------contact index---------------------*/

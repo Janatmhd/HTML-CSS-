@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- les balises SEO -->
+     <meta name="description" content="description de la page ou du site">
+     <meta name="keywords" content="la listes des mots clés">
+     <meta name="author" content="l'auteur et la date de réalisation">
+    <title>Bootstrap</title>
+    <!-- link CSS -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- link favicon on n'oublie favicon dans le rel -->
+     <link rel="icon" type="image/favicon" href="./assets/images/bootstrap-logo-shadow.png">
+     <!-- link Javascript -->
+      <!-- <script src="./assets/Js/bootstrap.bundle.min.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#intro">Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#un">Bootstrap ?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#deux">containers</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu deroulant
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">menu 1</a></li>
+            <li><a class="dropdown-item" href="#">menu 2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">menu 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#trois">Positionnement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quatre">Grille</a>
+          </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    </header>
+    <h1 id="intro">Bootstrap</h1>
+    <h2>Introduction</h2>
+    <p>Bootstrap est un framework CSS. Un framework est un ensemble de librairies regroupées dans un but précis et possédant des règles internes que doivent suivre les utilisateurs. <br>
+    En d'autres termes et pour le dire plus simplement, Bootstrap est un ensemble de fichiers CSS et Javascrip fonctionnant ensemble et qu'on va pouvoir utiliser pour créer des designs complexes de manière relativement simple. <br>
+    L'interet d'un framework c'est de nous permettre de réaliser plus de choses en codant moins.</p>
+    <h2 id="un">Comment utiliser Bootstrap ?</h2>
+    <img src="./assets/images/bootstrap.jpg" alt="bootstrap">
+    <p>Bootstrap est un ensemble de fichiers CSS et Javascript, donc pour l'utiliser nous devons integrer ses fichiers à notre projet ou tout simplement faire appel à ses fichiers via un CDN (Content delivery network).</p>
+    <ul>
+        <li>Première méthode</li>
+        <span>Télécharger Bootstrap depuis le site <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> ensuite integrer les fichiers CSS et Javascript à notre projet comme n'importe quel autre fichier CSS ou Js.</span>
+        <li>Seconde méthode</li>
+        <span>Utiliser un CDN de bootstrap et le lier à notre projet comme n'importe quel autre CDN (réseau de distribution de contenu)</span>
+    </ul>
+    <h2 id="deux">Les containers Bootstrap</h2>
+    <p>Bootstrap propose 2 types de containers responsives qui s'utilisent avec n'importe quel balise bloc.</p>
+    <div class="container bg-success toto">container</div> <br>
+    <div class="container-fluid bg-primary toto">container-fluid</div>
+    <p>Le container simple de Bootstrap possede des marges left et right tandisque le container-fluid occupe 100% de la largeur.</p>
+    <H2 id="trois">Positionnement</H2>
+    <p>Bootstrap propose des classes qui nous permettent de faciliter le positionnement des éléments. <br> Voir exemple ci-dessous.</p>
+    <div class="container bg-success p-3" >
+        <div class="row bg-primary text-center">
+            <div class="col bg-danger toto m-3">Colonne 1</div>
+            <div class="col bg-danger toto m-3">Colonne 2</div>
+            <div class="col bg-danger toto m-3">Colonne 3</div>
+            <div class="col bg-danger toto m-3">Colonne 4</div>
+            <div class="col bg-danger toto m-3">Colonne 5</div>
+        </div>
+    </div>
+    <h2 id="quatre">Options de grilles</h2>
+    <p>Bootstrap propose une grille de 12 colonnes. Son système de grille peut s'adapter aux  6 points de rupture (breakpoint) par défaut et à tout autre point de rupture personnalisé par l'utilisateur. <br>
+    Les 6 niveaux de breakpoint de Bootstrap sont les suivants :</p>
+    <ul>
+        <li>Tres petit (xs)</li> <span>écran inferieur à 576px</span>
+        <li>petit (sm)</li> <span>écran supérieur ou égal à 576px</span>
+        <li>Moyen (md)</li> <span>écran supérieur ou égal à 768px</span>
+        <li>Grand(lg)</li> <span>écran supérieur ou égal à 992px</span>
+        <li> très Grand(xl)</li> <span>écran supérieur ou égal à 1200px</span>
+        <li> très très Grand(xxl)</li> <span>écran supérieur ou égal à 1400px</span>
+    </ul>
+    <p>Voir exemple ci-dessous.</p>
+    <div class="container bg-success p-3" >
+        <div class="row bg-primary text-center">
+            <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 1</div>
+            <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 2</div>
+            <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 3</div>
+            <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 4</div>
+            <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 5</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-11 col-md-5 col-lg-3 card m-3" style="width: 18rem;">
+                <img src="./assets/images/bootstrap.jpg" class="card-img-top" alt="description">
+                <div class="card-body text-center">
+                <h5 class="card-title">Service 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card m-3 col-xs-11 col-md-5 col-lg-3" style="width: 18rem;">
+                <img src="./assets/images/bootstrap.jpg" class="card-img-top" alt="description">
+                <div class="card-body text-center">
+                <h5 class="card-title">Service 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card m-3 col-xs-11 col-md-5 col-lg-3" style="width: 18rem;">
+                <img src="./assets/images/bootstrap.jpg" class="card-img-top" alt="description">
+                <div class="card-body text-center">
+                <h5 class="card-title">Service 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>      
+</html>

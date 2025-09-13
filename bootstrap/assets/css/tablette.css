@@ -1,0 +1,6 @@
+/*responsive pour ecran compris entre 500 et 900px*/
+header{
+    display: block;
+    background-color: wheat;
+    height: 60vh;
+}
